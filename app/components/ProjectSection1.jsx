@@ -75,10 +75,13 @@ const ProjectTag = ({ filterProjects }) => {
   };
 
   return (
-    <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
+    <div
+      className="text-white flex flex-row justify-center items-center gap-2 py-6"
+      id="projects"
+    >
       <button
         className={`rounded-full border-2 ${
-          selectedTag === "All" ? "border-purple-500" : "border-slate-600"
+          selectedTag === "All" ? "border-primary-500" : "border-slate-600"
         } hover:border-white px-6 py-3 text-xl cursor-pointer`}
         onClick={() => handleTagClick("All")}
       >
@@ -87,7 +90,7 @@ const ProjectTag = ({ filterProjects }) => {
       <button
         className={`rounded-full border-2 ${
           selectedTag === "Mobile App"
-            ? "border-purple-500"
+            ? "border-primary-500"
             : "border-slate-600"
         } hover:border-white px-6 py-3 text-xl cursor-pointer`}
         onClick={() => handleTagClick("Mobile App")}
@@ -97,7 +100,7 @@ const ProjectTag = ({ filterProjects }) => {
       <button
         className={`rounded-full border-2 ${
           selectedTag === "Photography"
-            ? "border-purple-500"
+            ? "border-primary-500"
             : "border-slate-600"
         } hover:border-white px-6 py-3 text-xl cursor-pointer`}
         onClick={() => handleTagClick("Photography")}

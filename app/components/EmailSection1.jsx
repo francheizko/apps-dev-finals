@@ -1,9 +1,136 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
+import Image from "next/image";
+import GithubIcon from "../../public/images/github-icon.svg";
+import FacebookIcon from "../../public/images/fb-icon.svg";
+import InstagramIcon from "../../public/images/ig-icon.svg";
+import Link from "next/link";
 
-const EmailSection1 = () => {
+const EmailSection = () => {
   return (
-    <section className="grid md:grid-cols-2 my-12 md:12">EmailSection</section>
+    <section
+      className="grid md:grid-cols-3 my-12 md:my-12 py-24 gap-12 relative"
+      id="contact"
+    >
+      {
+        //<div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
+      }
+
+      <div>
+        <h5 className="text-xl font-bold text-white my-2">
+          Let&apos;s connect
+        </h5>
+        <p className="text-[#ADB7BE] mb-4 max-w-md">
+          {" "}
+          I&apos;m currently looking for new opportunities, my inbox is always
+          open. Whether you have a question or just want to say hi, I&apos;ll
+          try my best to get back to you!
+        </p>
+        <div className="socials flex flex-row gap-2">
+          <Link href="https://github.com/francheizko">
+            <Image src={GithubIcon} alt="github" width={60} />
+          </Link>
+          <Link href="https://www.facebook.com/Franz.Franzier.Franziest">
+            <Image src={FacebookIcon} alt="facebook" width={60} />
+          </Link>
+          <Link href="https://www.instagram.com/francheizko/">
+            <Image src={InstagramIcon} alt="instagram" width={60} />
+          </Link>
+        </div>
+      </div>
+      <div>
+        <h2 className="text-xl font-bold">Contact Me</h2>
+        <div className="flex items-center space-x-2">
+          <Image
+            src="/images/email.png"
+            alt="email"
+            width={50}
+            height={50}
+            className="object-contain"
+          />
+          <p className="text-[#ADB7BE] max-w-md">francheizko@gmail.com</p>
+        </div>
+        <div className="flex items-center space-x-2">
+          <Image
+            src="/images/call.png"
+            alt="call"
+            width={50}
+            height={50}
+            className="object-contain"
+          />
+          <p className="text-[#ADB7BE] max-w-md">+639-56047-5599</p>
+        </div>
+        <div className="flex items-center space-x-2">
+          <Image
+            src="/images/home.png"
+            alt="address"
+            width={50}
+            height={50}
+            className="object-contain"
+          />
+          <p className="text-[#ADB7BE] max-w-md">
+            Natalio B. Bacalso Ave, Basak, Cebu City, 6000 Cebu
+          </p>
+        </div>
+      </div>
+      <div>
+        <form className="flex flex-col">
+          <div className="mb-6">
+            <label
+              htmlFor="email"
+              className="text-white block mb-2 text-sm font-medium"
+            >
+              Your email
+            </label>
+            <input
+              name="email"
+              type="email"
+              id="email"
+              required
+              className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+              placeholder="jacob@google.com"
+            />
+          </div>
+          <div className="mb-6">
+            <label
+              htmlFor="subject"
+              className="text-white block text-sm mb-2 font-medium"
+            >
+              Subject
+            </label>
+            <input
+              name="subject"
+              type="text"
+              id="subject"
+              required
+              className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+              placeholder="Just saying hi"
+            />
+          </div>
+          <div className="mb-6">
+            <label
+              htmlFor="message"
+              className="text-white block text-sm mb-2 font-medium"
+            >
+              Message
+            </label>
+            <textarea
+              name="message"
+              id="message"
+              className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+              placeholder="Let's talk about..."
+            />
+          </div>
+          <button
+            type="submit"
+            className="bg-primary-500 hover:bg-primary-600 text-white font-medium py-2.5 px-5 rounded-lg w-full"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
   );
 };
 
-export default EmailSection1;
+export default EmailSection;
