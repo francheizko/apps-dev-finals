@@ -3,8 +3,19 @@ import React from 'react'
 import Image from 'next/image'
 import { TypeAnimation } from 'react-type-animation'
 
+const cvFile = '/klara-cv.pdf';
 
 const HeroSection = () => {
+    const handleDownload = () => {
+        const link = document.createElement('a');
+        link.href = cvFile;
+        link.download = 'klara-cv.pdf';
+        document.body.appendChild(link);
+    
+        link.click();
+    
+        document.body.removeChild(link);
+      };
   return (
     <section>
         <div className='grid grid-cols-1 sm:grid-cols-12'>
@@ -32,7 +43,7 @@ const HeroSection = () => {
                     Enthusiastic and eager, I&apos;m navigating the industry with fresh perspectives and a hunger to learn. Every day is an opportunity to absorb new insights, sharpen skills, and expand my knowledge base. I&apos;m dedicated to continual growth, eagerly embracing the challenges that come my way as stepping stones toward becoming an accomplished professional in this dynamic field.
                 </p>
                 <div>
-                    <button className='px-1 py-1 rounded-full mr-4 bg-white bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 text-white'>
+                    <button className='px-1 py-1 rounded-full mr-4 bg-white bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 text-white' onClick={handleDownload}>
                         <span className='block bg-transparent  hover:bg-slate-800 text-white rounded-full px-5 py-2 font-bold'>Hire Me</span>
                     </button>
                     <button className='px-1 py-1 rounded-full bg-white bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 text-white'>
