@@ -21,9 +21,9 @@ const navLinks = [
 
 const NavBar = () => {
   return (
-    <nav className='border-b'/*className='fixed top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-90'*/>
+    <nav className='border-b'>
         <div className='flex flex-wrap items-center justify-between mx-auto pl-9 pr-9'>
-            <Link href={"/"} /*className='text-2xl md:text-5xl text-white font-semibold*/>
+            <Link href={"/"}>
                 <Image
                     src='/images/logo.png'
                     alt='logo'

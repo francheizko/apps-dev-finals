@@ -7,41 +7,8 @@ import InstagramIcon from "../../public/images/ig-icon.svg"
 import Link from 'next/link'
 
 const EmailSection = () => {
-    const [emailSubmitted, setEmailSubmitted] = useState(false);
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        const data = {
-            email: e.target.email.value,
-            subject: e.target.subject.value,
-            message: e.target.message.value,
-        }
-        const JSONdata = JSON.stringify(data);
-        const endpoint = "/api/send";
-
-        const options = {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSONdata,
-        };
-
-        const response = await fetch(endpoint, options);
-        try {
-            const resData = await response.json();
-        } catch (error) {
-            console.error("Error parsing JSON:", error);
-        }
-        
-
-        if (response.status === 200) {
-            console.log("Message sent.");
-            setEmailSubmitted(true);
-        }
-    };
-
   return (
-    <section className='grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4'>
+    <section className='grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4' id='contact'>
         
         <div>
             <h5 className='text-xl font-bold text-white my-2'>Let&apos;s connect</h5>
@@ -62,26 +29,43 @@ const EmailSection = () => {
             </div>
         </div>
         <div>
-            <form className='flex flex-col gap-4' onSubmit={handleSubmit}>
-                <label htmlFor="email" type="email" className='text-white block text-sm font-medium'>Your email</label>
-                <input name='email' type="email" id='email' required placeholder='example@gmail.com' className='bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5'/>
-
-                <label htmlFor="subject" className='text-white block text-sm font-medium'>Subject</label>
-                <input name="subject"type="text" id='subject' required placeholder='Add Subject' className='bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5'/>
-
-                <label htmlFor="message" className='text-white block text-sm font-medium'>Message</label>
-                <textarea name="message" id="message" placeholder='Send me a message' className='bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5'></textarea>
-
-                <button type='submit' className='bg-purple-500 hover:bg-purple-600 text-white font-medium px-5 py-2.5 rounded-lg w-full'>Send Message</button>
-
-                {
-                    emailSubmitted && (
-                        <p className='text-green-500 text-sm mt-2'>
-                            Email sent successfully!
-                        </p>
-                    )
-                }
-            </form>
+            <h2 className='text-xl font-bold'>Contact Me</h2>
+            <div className='flex items-center space-x-2'>
+                <Image
+                    src="/images/email.png"
+                    alt='email'
+                    width={50}
+                    height={50}
+                    className='object-contain'
+                />
+                <p className='text-[#ADB7BE] max-w-md'>
+                    evrylclaire.sembrino.21@usjr.edu.ph
+                </p>
+            </div>
+            <div className='flex items-center space-x-2'>
+                <Image
+                    src="/images/call.png"
+                    alt='call'
+                    width={50}
+                    height={50}
+                    className='object-contain'
+                />
+                <p className='text-[#ADB7BE] max-w-md'>
+                    +639-99924-1439
+                </p>
+            </div>
+            <div className='flex items-center space-x-2'>
+                <Image
+                    src="/images/home.png"
+                    alt='address'
+                    width={50}
+                    height={50}
+                    className='object-contain'
+                />
+                <p className='text-[#ADB7BE] max-w-md'>
+                    Bulacao, Talisay City, Cebu, Philippines
+                </p>
+            </div>
         </div>
     </section>
   )

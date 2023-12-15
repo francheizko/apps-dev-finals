@@ -17,7 +17,7 @@ const HeroSection = () => {
         document.body.removeChild(link);
       };
   return (
-    <section>
+    <section id='home'>
         <div className='grid grid-cols-1 sm:grid-cols-12'>
             <div className='col-span-7 place-self-center text-center sm:text-left lg:mr-6'>
                 <h1 className='text-white mb-4 text-4xl lg:text-6xl font-extrabold'>
@@ -43,10 +43,10 @@ const HeroSection = () => {
                     Enthusiastic and eager, I&apos;m navigating the industry with fresh perspectives and a hunger to learn. Every day is an opportunity to absorb new insights, sharpen skills, and expand my knowledge base. I&apos;m dedicated to continual growth, eagerly embracing the challenges that come my way as stepping stones toward becoming an accomplished professional in this dynamic field.
                 </p>
                 <div>
-                    <button className='px-1 py-1 rounded-full mr-4 bg-white bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 text-white' onClick={handleDownload}>
+                    <button className='px-1 py-1 rounded-full mr-4 bg-white bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 text-white'>
                         <span className='block bg-transparent  hover:bg-slate-800 text-white rounded-full px-5 py-2 font-bold'>Hire Me</span>
                     </button>
-                    <button className='px-1 py-1 rounded-full bg-white bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 text-white'>
+                    <button className='px-1 py-1 rounded-full bg-white bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 text-white' onClick={handleDownload}>
                         <span className='block bg-transparent  hover:bg-slate-800 text-white rounded-full px-5 py-2 font-bold'>Download CV</span>
                     </button>
                 </div>
