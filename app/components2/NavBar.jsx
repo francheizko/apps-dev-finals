@@ -23,7 +23,7 @@ const NavBar = () => {
   return (
     <nav className="border-b">
       <div className="flex flex-wrap items-center justify-between mx-auto pl-9 pr-9">
-        <Link href={"/"}>
+        <Link href={"/"} legacyBehavior>
           <Image
             src="/images/localancer-logo 1.png"
             alt="author image"

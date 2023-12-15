@@ -27,13 +27,13 @@ const EmailSection = () => {
           try my best to get back to you!
         </p>
         <div className="socials flex flex-row gap-2">
-          <Link href="https://github.com/francheizko">
+          <Link href="https://github.com/francheizko" legacyBehavior>
             <Image src={GithubIcon} alt="github" width={60} />
           </Link>
-          <Link href="https://www.facebook.com/Franz.Franzier.Franziest">
+          <Link href="https://www.facebook.com/Franz.Franzier.Franziest" legacyBehavior>
             <Image src={FacebookIcon} alt="facebook" width={60} />
           </Link>
-          <Link href="https://www.instagram.com/francheizko/">
+          <Link href="https://www.instagram.com/francheizko/" legacyBehavior>
             <Image src={InstagramIcon} alt="instagram" width={60} />
           </Link>
         </div>

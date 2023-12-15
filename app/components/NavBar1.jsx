@@ -31,7 +31,7 @@ const NavBar1 = () => {
         <Link
           href={"/"}
           className="text-2xl md:text-5xl text-white font-semibold"
-        >
+          legacyBehavior>
           <Image
             src="/images/localancer-logo 1.png"
             alt="author image"

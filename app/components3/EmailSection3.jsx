@@ -42,14 +42,14 @@ const EmailSection = () => {
           to get back to you!
         </p>
         <div className="socials flex flex-row">
-          <Link href="discord.com">
+          <Link href="discord.com" legacyBehavior>
             <Image
               src={DiscordIcon}
               className="object-scale-down h-10 w-20"
               alt="disc"
             />
           </Link>
-          <Link href="instagram.com">
+          <Link href="instagram.com" legacyBehavior>
             <Image
               src={InstagramIcon}
               className="object-scale-down h-10 w-20"

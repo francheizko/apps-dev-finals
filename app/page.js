@@ -18,7 +18,9 @@ export default function Home() {
         // <LandingPage2 />
         // <LandingPage />
       }
-      <Landing />
+      <NavBar1 />
+      <LandingPage2 />
+      <LandingPage />
     </div>
   );
 }
