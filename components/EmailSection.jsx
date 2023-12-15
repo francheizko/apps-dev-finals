@@ -1,9 +1,9 @@
 "use client";
 import React, { useState} from 'react'
 import Image from 'next/image'
-import GithubIcon from "../../public/images/github-icon.svg"
-import FacebookIcon from "../../public/images/fb-icon.svg"
-import InstagramIcon from "../../public/images/ig-icon.svg"
+import GithubIcon from "../public/images/github-icon.svg"
+import FacebookIcon from "../public/images/fb-icon.svg"
+import InstagramIcon from "../public/images/ig-icon.svg"
 import Link from 'next/link'
 
 const EmailSection = () => {
