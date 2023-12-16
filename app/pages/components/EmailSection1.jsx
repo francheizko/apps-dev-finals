@@ -1,9 +1,9 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import GithubIcon from "../../public/images/github-icon.svg";
-import FacebookIcon from "../../public/images/fb-icon.svg";
-import InstagramIcon from "../../public/images/ig-icon.svg";
+import GithubIcon from "../../../public/images/github-icon.svg";
+import FacebookIcon from "../../../public/images/fb-icon.svg";
+import InstagramIcon from "../../../public/images/ig-icon.svg";
 import Link from "next/link";
 
 const EmailSection = () => {
@@ -30,7 +30,10 @@ const EmailSection = () => {
           <Link href="https://github.com/francheizko" legacyBehavior>
             <Image src={GithubIcon} alt="github" width={60} />
           </Link>
-          <Link href="https://www.facebook.com/Franz.Franzier.Franziest" legacyBehavior>
+          <Link
+            href="https://www.facebook.com/Franz.Franzier.Franziest"
+            legacyBehavior
+          >
             <Image src={FacebookIcon} alt="facebook" width={60} />
           </Link>
           <Link href="https://www.instagram.com/francheizko/" legacyBehavior>

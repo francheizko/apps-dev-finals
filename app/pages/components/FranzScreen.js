@@ -1,5 +1,5 @@
 // FranzScreen.js
-
+"use client";
 import React from "react";
 import NavBar1 from "./NavBar1";
 import HeroSection1 from "./HeroSection1";
@@ -11,9 +11,9 @@ import Footer1 from "./Footer1";
 
 const FranzScreen = () => {
   return (
-    <main className="flex min-h-screen flex-col bg-[#121212]">
+    <main className="flex min-h-screen flex-col bg-[#121212]" id="FranzScreen">
       <NavBar1 />
-      <div class="container mx-auto px-12 py-12">
+      <div className="container mx-auto px-12 py-12">
         <HeroSection1 />
         <AchievementsSection1 />
         <AboutSection1 />

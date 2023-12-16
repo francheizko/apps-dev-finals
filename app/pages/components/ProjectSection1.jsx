@@ -12,7 +12,7 @@ const projectsData = [
     image: "/images/Project-1.png",
     tag: ["All", "Mobile"],
     gitUrl: "/",
-    previewUrl: "/",
+    previewUrl: "https://github.com/Izkumberdu/localancer",
   },
   {
     id: 2,
@@ -22,7 +22,8 @@ const projectsData = [
     image: "/images/Project-2.png",
     tag: ["All", "Photography"],
     gitUrl: "/",
-    previewUrl: "/",
+    previewUrl:
+      "https://www.facebook.com/permalink.php?story_fbid=pfbid04DUWXijwQWWfbLASpzTUpebrweM7QAa4LLBXP59QDwCTS3qahSjy742EiRyNr4BFl&id=100087438256877",
   },
   {
     id: 3,
@@ -42,7 +43,8 @@ const projectsData = [
     image: "/images/Project-4.png",
     tag: ["All", "Photography"],
     gitUrl: "/",
-    previewUrl: "/",
+    previewUrl:
+      "https://www.facebook.com/permalink.php?story_fbid=pfbid0tyMxJqVET1CzU9VQqms29c8Aw2KTtFB51fRDWRWvT41tSi3Jm14fFu9Dhfz51tmsl&id=100087438256877",
   },
   {
     id: 5,
@@ -52,7 +54,8 @@ const projectsData = [
     image: "/images/Project-5.png",
     tag: ["All", "Mobile"],
     gitUrl: "/",
-    previewUrl: "/",
+    previewUrl:
+      "https://github.com/francheizko/flutter_midtermexam_travelnewsapp",
   },
   {
     id: 6,
@@ -62,7 +65,7 @@ const projectsData = [
     image: "/images/Project-6.png",
     tag: ["All", "Mobile"],
     gitUrl: "/",
-    previewUrl: "/",
+    previewUrl: "https://github.com/Izkumberdu/doctor_app",
   },
 ];
 

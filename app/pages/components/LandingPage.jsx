@@ -10,7 +10,6 @@ const LandingPage = () => {
   return (
     <section className="py-16 bg-[#121212]">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        {/* Freelancer 1 */}
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -45,10 +44,11 @@ const LandingPage = () => {
                 collaborate and turn your ideas into a stunning online presence!
               </p>
               <div className="flex sm:justify-center">
-                <Link href="./HeroSection1">
-                  <a className="mt-4 px-10 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-secondary-500 via-primary-500 to-secondary-500 hover:bg-slate-200 text-white">
-                    Hire Me
-                  </a>
+                <Link
+                  href="/FranzScreen"
+                  className="mt-4 px-10 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-secondary-500 via-primary-500 to-secondary-500 hover:bg-slate-200 text-white"
+                >
+                  Hire Me
                 </Link>
                 <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-secondary-500 via-primary-500 to-secondary-500  hover:bg-slate-800 text-white mt-3">
                   <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-1.5">

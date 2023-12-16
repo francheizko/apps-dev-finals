@@ -1,8 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 "use client";
 import React from "react";
-import DiscordIcon from "../../public/images/discord.svg";
-import InstagramIcon from "../../public/images/instagram.svg";
+import DiscordIcon from "../../../public/images/discord.svg";
+import InstagramIcon from "../../../public/images/instagram.svg";
 import Link from "next/link";
 import Image from "next/image";
 
